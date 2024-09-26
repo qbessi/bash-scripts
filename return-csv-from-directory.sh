@@ -8,4 +8,4 @@ returnList() {
   echo $1
 }
 
-returnList "/Users/Tech/Desktop/backup, Nutters_with_Putters_Revenge_of_the_Nutters2, avi"
+returnList "/Users/Tech/Desktop/backup, TotallyTrolls2, avi"
