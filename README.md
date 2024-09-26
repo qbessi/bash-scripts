@@ -1,1 +1,1 @@
-# Learning Hash Shell.
+# Learning Bash Shell.
