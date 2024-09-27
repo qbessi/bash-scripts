@@ -4,15 +4,15 @@
 # "DirectoryName, Filename, FileExtension"
 
 
-function splitDir() {
+function split_dir() {
 
-  DIR=$(dirname "$1")
+  dir=$(dirname "$1")
 
-  NAME=$(basename "$1" | cut -d '.' -f1)
+  name=$(basename "$1" | cut -d '.' -f1)
 
-  EXT=$(basename "$1" | cut -d '.' -f2)
+  ext=$(basename "$1" | cut -d '.' -f2)
 
-  echo "$DIR, $NAME, $EXT"
+  echo "$dir, $name, $ext"
 }
 
-splitDir "$1"
+split_dir "$1"

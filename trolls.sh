@@ -7,9 +7,9 @@
 
 function trolls() {
   
-  NEWSTRING=$(basename "$1" | tr -d 'aeiouAEIOU')
+  new_string=$(basename "$1" | tr -d 'aeiouAEIOU')
   
-  echo "$NEWSTRING"
+  echo "$new_string"
 }
 
 trolls "$1"

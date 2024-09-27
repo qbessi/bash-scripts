@@ -16,8 +16,8 @@ m=$(($2 * 60 * 1000))
 s=$(($3 * 1000))
 result=$((h + m + s))
 
-function sinceMidnight() {
+function since_midnight() {
     echo $result
 }
 
-sinceMidnight
+since_midnight
