@@ -20,4 +20,4 @@ function sinceMidnight() {
     echo $result
 }
 
-sinceMidnight "$1"
+sinceMidnight
