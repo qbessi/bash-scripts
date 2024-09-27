@@ -1,1 +1,1 @@
-![Learning Bash Scripting](https://github.com/qbessi/learning-bash-shell/blob/main/learning-bash-scripting.jpg)
+![https://www.codewars.com/users/qbessi](https://github.com/qbessi/learning-bash-shell/blob/main/learning-bash-scripting.jpg)
