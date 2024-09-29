@@ -11,7 +11,7 @@
 
 #result = 61000
 
-function since_midnight() {
+function sinceMidnight() {
     h=$(($1 * 60 *  60 * 1000))
     m=$(($2 * 60 * 1000))
     s=$(($3 * 1000))
@@ -20,4 +20,4 @@ function since_midnight() {
     echo $result
 }
 
-since_midnight
+sinceMidnight

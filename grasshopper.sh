@@ -6,8 +6,8 @@
 
 #Hello, Mr. Spock
 
-function say_hello(){
+function sayHello(){
     echo "Hello, $1"
 }
 
-say_hello "$1"
+sayHello
