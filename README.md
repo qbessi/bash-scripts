@@ -1,6 +1,4 @@
-<a href="https://www.codewars.com/users/qbessi" target="_blank">
-  <img src="learn-bash.jpg" alt="Learn Bash"/>
-</a>
+<img src="learn-bash.jpg" alt="Learn Bash"/>
 
 1. **Basic Bash Script Automation**  
    Create a script that backs up a specified directory to a backup location.
