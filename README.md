@@ -1,5 +1,5 @@
 <a href="https://www.codewars.com/users/qbessi" target="_blank">
-  <img src="https://github.com/qbessi/learning-bash-shell/blob/main/learn-bash-scripting.jpg" alt="Learn Bash Scripting"/>
+  <img src="https://github.com/qbessi/learning-bash-shell/blob/main/learn-bash.jpg" alt="Learn Bash"/>
 </a>
 
 1. **Basic Bash Script Automation**  
