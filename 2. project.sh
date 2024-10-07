@@ -33,7 +33,7 @@ echo ""
 echo "Do you want these variables added to your ~/.bashrc? (Yes/No)"
 read ADDTO_BASHRC
 
-if [[ "$ADDTO_BASHRC" == "yes" || "$ADDTO_BASHRC" == "Yes" ]]; then
+if [[ "${ADDTO_BASHRC,,}" == "yes" ]]; then
     {
         echo "export PROJECT_NAME='$PROJECT_NAME'"
         echo "export PROJECT_PATH='$PROJECT_PATH'"
