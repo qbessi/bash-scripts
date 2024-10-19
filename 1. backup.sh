@@ -4,6 +4,9 @@ echo " __ )     \      ___|  |  /  |   |   _ \ "
 echo " __ \    _ \    |      ' /   |   |  |   | "
 echo " |   |  ___ \   |      . \   |   |  ___/ "
 echo "____/ _/    _\ \____| _|\_\ \___/  _|    "
+echo "--------------------------------------------------"
+echo "Backup a specified directory to a backup location."
+echo "--------------------------------------------------"
 
 RED='\033[0;31m'         # Red color for error messages
 YELLOW='\033[1;33m'      # Yellow color for progress messages
