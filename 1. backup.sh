@@ -1,22 +1,18 @@
 #!/bin/bash
 
-# Print a decorative header for the backup script
 echo " __ )     \      ___|  |  /  |   |   _ \ "
 echo " __ \    _ \    |      ' /   |   |  |   | "
 echo " |   |  ___ \   |      . \   |   |  ___/ "
 echo "____/ _/    _\ \____| _|\_\ \___/  _|    "
 
-# Define color codes for terminal output
 RED='\033[0;31m'         # Red color for error messages
 YELLOW='\033[1;33m'      # Yellow color for progress messages
 RESET='\033[0m'          # Reset to default color after coloring text
 
-# Prompt the user for the source directory
 echo ""
 echo "Please enter the source directory (local):"
 read SOURCE_DIR         # Read user input for the source directory
 
-# Prompt the user for the backup directory
 echo ""
 echo "Please enter the backup directory (local or remote):"
 read BACKUP_DIR         # Read user input for the backup directory

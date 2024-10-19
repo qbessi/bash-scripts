@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "  |   |    _ \    __ \       \     __ __|   ____| "
+echo "  |   |   |   |   |   |     _ \       |     __|   "
+echo "  |   |   ___/    |   |    ___ \      |     |     "
+echo " \___/   _|      ____/   _/    _\    _|    _____| "
+
+if command -v apt; then
+    sudo apt update && sudo apt upgrade -y
+else
+    sudo yum update -y
+fi
