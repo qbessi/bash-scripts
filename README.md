@@ -1,3 +1,13 @@
+.:: .::         .:         .:: ::  .::     .::
+.:    .::      .: ::     .::    .::.::     .::
+.:     .::    .:  .::     .::      .::     .::
+.::: .:      .::   .::      .::    .:::::: .::
+.:     .::  .:::::: .::        .:: .::     .::
+.:      .: .::       .:: .::    .::.::     .::
+.:::: .:: .::         .::  .:: ::  .::     .::
+                                              
+Bash scripts I wrote whilst learning Bash.
+
 1. **Basic Bash Script Automation**  
    Create a script that backs up a specified directory to a backup location.
 
