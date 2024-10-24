@@ -15,7 +15,7 @@ LOGS="/var/log"
 FOLDER="archive"
 TIMESTAMP=$(date +"%Y-%m-%d_%H%M%S")
 
-sudo mkdir $LOGS/$FOLDER
-sudo find $LOGS -name "*.log" -type f -exec gzip {} \;
-sudo mv $LOGS/*.gz $LOGS/$FOLDER
-sudo rm -rf "*.log"
+sudo mkdir -p $LOGS/$FOLDER/$TIMESTAMP
+sudo find $LOGS -name "*.log" -mtime +7 -type f -exec mv {} $LOGS/$FOLDER \;
+
+echo "Completed"
