@@ -10,7 +10,7 @@
    Script that updates system packages using `apt` or `yum`.
 
 4. **Log File Rotation**  
-   Automate log rotation using a shell script to move old logs to an archive.
+   Log rotation using a shell script to move old logs to an archive.
 
 5. **Monitor Disk Space**  
    Script to check disk space and alert if usage exceeds a certain threshold.
