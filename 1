@@ -1,9 +1,0 @@
-echo "╔╦╗┌─┐┌┐┌┬┌┬┐┌─┐┬─┐
-║║║│ │││││ │ │ │├┬┘
-╩ ╩└─┘┘└┘┴ ┴ └─┘┴└─"
-echo "--"
-echo "Monitor disk space and send alert via email."
-
-read -p "Email to send alert to: " email_address
-read -p "Set Disk Space to Monitor: " monitor_disk
-df -h $monitor_disk
