@@ -1,4 +1,6 @@
- Bash everyday for 100 days (excluding Weekends).
+<img src="banner.png" />
+
+Bash everyday for 100 days (excluding Weekends).
 
 1. **Basic Bash Script Automation**  
    Script that backs up a specified directory to a backup location.
