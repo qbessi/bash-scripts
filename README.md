@@ -16,3 +16,6 @@
 
 5. **Monitor Disk Space**  
    Script to check disk space and alert if usage exceeds a certain threshold.
+
+6. **Service Status Check**
+   Create a script that checks if a service is running and restarts it if necessary.
