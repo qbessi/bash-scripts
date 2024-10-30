@@ -1,12 +1,7 @@
 #!/bin/bash
 
-echo "  |   |    _ \    __ \       \     __ __|   ____| "
-echo "  |   |   |   |   |   |     _ \       |     __|   "
-echo "  |   |   ___/    |   |    ___ \      |     |     "
-echo " \___/   _|      ____/   _/    _\    _|    _____| "
-echo "--------------------------------------------------"
+echo "System Updates"
 echo "Updates system packages using apt or yum."
-echo "--------------------------------------------------"
 
 if command -v apt >/dev/null 2>&1; then
     sudo apt update && sudo apt upgrade -y

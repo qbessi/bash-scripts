@@ -2,19 +2,39 @@
 
 echo "Service Status Check"
 echo "Checks if a service is running and restarts it if necessary."
-echo "Use crontab -e to run this script at a regular interval"
 
-read -p "Email to send alert to: " email_address
-read -p "Service to check: " service_name
+SERVICE_NAME="$1"
+EMAIL_ADDRESS="$2"
+LOGFILE="/var/log/service_check.log"
 
-if ! systemctl is-active --quiet "$service_name"; then 
-    echo "$service_name is down, restarting." | mail -s "$service_name is down, restarting." "$email_address"
-    systemctl restart "$service_name"
-    if systemctl is-active --quiet "$service_name"; then
-        echo "$service_name restarted successfully." | mail -s "$service_name restarted successfully." "$email_address"
+send_email() {
+    local subject="$1"
+    local message="$2"
+    echo "$message" | mail -s "$subject" "$EMAIL_ADDRESS"
+}
+
+check_service() {
+    systemctl is-active --quiet "$SERVICE_NAME"
+}
+
+restart_service() {
+    systemctl restart "$SERVICE_NAME"
+}
+
+echo "Starting service check for $SERVICE_NAME" | tee -a "$LOGFILE"
+
+if ! check_service; then
+    echo "$(date): $SERVICE_NAME is down, attempting to restart..." | tee -a "$LOGFILE"
+    send_email "$SERVICE_NAME is down, attempting restart" "$SERVICE_NAME is not running. Restarting the service."
+
+    restart_service
+    if check_service; then
+        echo "$(date): $SERVICE_NAME restarted successfully." | tee -a "$LOGFILE"
+        send_email "$SERVICE_NAME restarted successfully" "$SERVICE_NAME has been restarted successfully."
     else
-        echo "Failed to restart $service_name." | mail -s "Failed to restart $service_name." "$email_address"
+        echo "$(date): Failed to restart $SERVICE_NAME." | tee -a "$LOGFILE"
+        send_email "Failed to restart $SERVICE_NAME" "Attempt to restart $SERVICE_NAME failed. Manual intervention may be required."
     fi
 else
-    echo "$service_name is running"
+    echo "$(date): $SERVICE_NAME is running normally." | tee -a "$LOGFILE"
 fi

@@ -1,10 +1,7 @@
-echo "╔╦╗┌─┐┌┐┌┬┌┬┐┌─┐┬─┐"
-echo "║║║│ │││││ │ │ │├┬┘"
-echo "╩ ╩└─┘┘└┘┴ ┴ └─┘┴└─"
-echo "--"
-echo "Monitor disk space and send alert via email."
-
 #!/bin/bash
+
+echo "Monitor Disk Space"
+echo "Monitor disk space and send alert via email."
 
 read -p "Email to send alert to: " email_address
 read -p "Set Disk Space to Monitor (e.g., /dev/sda2): " monitor_disk
