@@ -1,13 +1,7 @@
 #!/bin/bash
 
-# Print a decorative header for the backup script
-echo "  _ \    _ \    _ \       |  ____|   ___| __ __|"
-echo " |   |  |   |  |   |      |  __|    |        |  "
-echo " ___/   __ <   |   |  \   |  |      |        |  "
-echo "_|     _| \_\ \___/  \___/  _____| \____|   _|  "
-echo "--------------------------------------------------"
+echo "
 echo "Set and export environment variables for a project."
-echo "--------------------------------------------------"
 
 RED='\033[0;31m'
 
