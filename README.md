@@ -1,6 +1,6 @@
 <img src="banner.png" />
 
-100 days of Bash (excluding Weekends).
+100 days of Bash.
 
 1. **Basic Bash Script Automation**  
    Script that backs up a specified directory to a backup location.
